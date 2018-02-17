@@ -4,8 +4,7 @@ export default  {
     svg:`
 
 <svg width="208px" height="208px" viewBox="0 0 208 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
+ 
     <defs>
         <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#444040" stop-opacity="0.51098279" offset="0%"></stop>
