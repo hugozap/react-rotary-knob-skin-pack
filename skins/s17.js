@@ -81,3 +81,4 @@ export default  {
     </g>
 </svg>
 `
+}
