@@ -1,0 +1,20 @@
+{
+  "name": "react-rotary-knob-skins-package",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Demo of the custom skins package for react-rotary-knob",
+  "main": "index.js",
+  "scripts": {
+    "start": "x0 dev src/Index.js -op 8888",
+    "build": "x0 build src/Index.js -d . --static"
+  },
+  "dependencies": {
+    "@compositor/x0": "^3.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-rotary-knob": "^1.0.11",
+    "styled-components": "^3.1.6",
+    "styled-system": "^2.0.2"
+  }
+}

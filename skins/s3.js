@@ -33,19 +33,12 @@ svg : `
             <stop stop-color="#D8D8D8" offset="100%"></stop>
         </linearGradient>
         <circle id="path-7" cx="84" cy="84" r="84"></circle>
-        <filter x="-4.2%" y="-3.6%" width="108.3%" height="108.3%" filterUnits="objectBoundingBox" id="filter-8">
+        <filter x="-3.9%" y="-3.9%" width="107.7%" height="107.7%" filterUnits="objectBoundingBox" id="filter-8">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <circle id="path-9" cx="83.497006" cy="11.0658683" r="5.02994012"></circle>
-        <filter x="-24.9%" y="-24.9%" width="149.7%" height="149.7%" filterUnits="objectBoundingBox" id="filter-10">
-            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -59,16 +52,12 @@ svg : `
                     <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                     <use stroke="#4A4A4A" stroke-width="1" fill="#4A4A4A" fill-rule="evenodd" xlink:href="#path-4"></use>
                 </g>
-                <g id="knob" transform="translate(16.000000, 17.000000)">
+                <g id="knob" transform="translate(16.000000, 16.000000)">
                     <g id="Oval-2">
                         <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
                         <use stroke="#979797" stroke-width="1" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
                     </g>
-                    <g id="Oval-3">
-                        <use fill="#AAA8A8" fill-rule="evenodd" xlink:href="#path-9"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
-                        <use stroke="#757171" stroke-width="1" xlink:href="#path-9"></use>
-                    </g>
+                    <path d="M83.9313725,1.43137255 L100.431373,62.5297348 C95.2269952,64.0719629 89.7269952,64.8343105 83.9313725,64.8167776 C78.1357499,64.7992447 72.6357499,64.0368971 67.4313725,62.5297348 L83.9313725,1.43137255 Z" id="Rectangle-Copy-3" fill="#3D3D3D" transform="translate(83.931373, 33.124223) scale(1, -1) translate(-83.931373, -33.124223) "></path>
                 </g>
             </g>
         </g>
