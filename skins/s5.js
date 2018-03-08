@@ -2,63 +2,63 @@ export default  {
     knobX: 84,
     knobY: 84.50,
     svg:`
-
-    <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 200 200" version="1.1">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#696363" offset="0%"></stop>
-            <stop stop-color="#353131" offset="100%"></stop>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="519ce1c1-4b51-1193-469c-b4041160cdf6">
+            <stop stop-color="#696363" offset="0%"/>
+            <stop stop-color="#353131" offset="100%"/>
         </linearGradient>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
-            <stop stop-color="#747171" offset="0%"></stop>
-            <stop stop-color="#858383" offset="0%"></stop>
-            <stop stop-color="#939191" offset="6.74580791%"></stop>
-            <stop stop-color="#939191" offset="6.74580791%"></stop>
-            <stop stop-color="#EDEDED" offset="50.0553592%"></stop>
-            <stop stop-color="#676565" offset="100%"></stop>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="27a083dc-87d4-f579-9806-7ab7d3f8ca23">
+            <stop stop-color="#747171" offset="0%"/>
+            <stop stop-color="#858383" offset="0%"/>
+            <stop stop-color="#939191" offset="6.74580791%"/>
+            <stop stop-color="#939191" offset="6.74580791%"/>
+            <stop stop-color="#EDEDED" offset="50.0553592%"/>
+            <stop stop-color="#676565" offset="100%"/>
         </linearGradient>
-        <text id="text-3" font-family="Helvetica" font-size="24" font-weight="normal">
+        <text id="d8827e87-c07f-b750-ce88-b5ff286e6803" font-family="Helvetica" font-size="24" font-weight="normal">
             <tspan x="0.72851562" y="23">100</tspan>
         </text>
-        <filter x="-14.6%" y="-20.7%" width="129.3%" height="141.4%" filterUnits="objectBoundingBox" id="filter-4">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.639215686   0 0 0 0 0.784313725   0 0 0 0 0.956862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        <filter x="-14.6%" y="-20.7%" width="129.3%" height="141.4%" filterUnits="objectBoundingBox" id="71cec816-af34-14fa-dd92-f6c1afeae759">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.639215686   0 0 0 0 0.784313725   0 0 0 0 0.956862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"/>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="s5">
-            <g id="s5outer" fill-rule="nonzero" fill="url(#linearGradient-1)">
+            <g id="s5outer" fill-rule="nonzero" fill="url(#519ce1c1-4b51-1193-469c-b4041160cdf6)">
                 <g id="path-2-link">
-                    <circle id="path-2" cx="100" cy="100" r="100"></circle>
+                    <circle id="path-2" cx="100" cy="100" r="100"/>
                 </g>
             </g>
             <g id="knob" transform="translate(16.000000, 15.000000)">
-                <g id="s5inneroutercircle" transform="translate(0.000000, 1.000000)" stroke-width="6" stroke="#3D3D3D" fill="url(#linearGradient-2)">
+                <g id="s5inneroutercircle" transform="translate(0.000000, 1.000000)" stroke-width="6" stroke="#3D3D3D" fill="url(#27a083dc-87d4-f579-9806-7ab7d3f8ca23)">
                     <g id="path-5-link">
-                        <circle id="path-5" cx="84" cy="84" r="84"></circle>
+                        <circle id="path-5" cx="84" cy="84" r="84"/>
                     </g>
                 </g>
                 <g id="s5innercircle" transform="translate(44.000000, 45.000000)" fill-rule="nonzero" fill="#3D3D3D">
                     <g id="path-7-link">
-                        <circle id="path-7" cx="40" cy="40" r="40"></circle>
+                        <circle id="path-7" cx="40" cy="40" r="40"/>
                     </g>
                 </g>
-                <path d="M84.5,-6.28031714e-07 L101,61.0983616 C95.7956227,62.6405898 90.2956227,63.4029374 84.5,63.3854044 C78.7043773,63.3678715 73.2043773,62.6055239 68,61.0983616 L84.5,-6.28031714e-07 Z" id="s5marker" fill="#3D3D3D" fill-rule="nonzero" transform="translate(84.500000, 31.692850) scale(-1, 1) rotate(-180.000000) translate(-84.500000, -31.692850) "></path>
+                <path d="M84.5,-6.28031714e-07 L101,61.0983616 C95.7956227,62.6405898 90.2956227,63.4029374 84.5,63.3854044 C78.7043773,63.3678715 73.2043773,62.6055239 68,61.0983616 L84.5,-6.28031714e-07 Z" id="s5marker" fill="#3D3D3D" fill-rule="nonzero" transform="translate(84.500000, 31.692850) scale(-1, 1) rotate(-180.000000) translate(-84.500000, -31.692850) "/>
             </g>
             <g id="s5label" transform="translate(80.000000, 84.000000)" fill="#A3C8F4">
                 <g id="s5labeltext">
                     <g id="100">
-                        <use fill-opacity="1" filter="url(#filter-4)" xlink:href="#text-3"></use>
-                        <use fill-rule="evenodd" xlink:href="#text-3"></use>
-                        <use fill-opacity="1" xlink:href="#text-3"></use>
+                        <use fill-opacity="1" filter="url(#71cec816-af34-14fa-dd92-f6c1afeae759)" xlink:href="#d8827e87-c07f-b750-ce88-b5ff286e6803"/>
+                        <use fill-rule="evenodd" xlink:href="#d8827e87-c07f-b750-ce88-b5ff286e6803"/>
+                        <use fill-opacity="1" xlink:href="#d8827e87-c07f-b750-ce88-b5ff286e6803"/>
                     </g>
                 </g>
             </g>
         </g>
     </g>
 </svg>
+
     `
 }
