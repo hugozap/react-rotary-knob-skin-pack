@@ -33,6 +33,18 @@
 
 		})
 
+		var iriElementsAndProperties = {
+		      clipPath: ["clip-path"],
+		      "color-profile": ["color-profile"],
+		      cursor: ["cursor"],
+		      filter: ["filter"],
+		      linearGradient: ["fill", "stroke"],
+		      marker: ["marker", "marker-start", "marker-mid", "marker-end"],
+		      mask: ["mask"],
+		      pattern: ["fill", "stroke"],
+		      radialGradient: ["fill", "stroke"]
+		    };
+
 		/**
 		 Change def element ids to something unique to avoid 
 		 conflicts as multiple svgs can wrongly use the same def 
@@ -45,21 +57,11 @@
                   svg,
                   "text/xml"
             );
-            console.log(xmlDoc)
+            
+            //Move text elements out of definitions
+            //(replacing <use> nodes)
 
-            var iriElementsAndProperties = {
-		      clipPath: ["clip-path"],
-		      "color-profile": ["color-profile"],
-		      cursor: ["cursor"],
-		      filter: ["filter"],
-		      linearGradient: ["fill", "stroke"],
-		      marker: ["marker", "marker-start", "marker-mid", "marker-end"],
-		      mask: ["mask"],
-		      pattern: ["fill", "stroke"],
-		      radialGradient: ["fill", "stroke"]
-		    };
-
-
+            moveTextNodesFromDefs(xmlDoc)
             //Change definition ids and their usages
       		const elementDefs = xmlDoc.querySelectorAll("defs " + "[id]");
       		for (let i = 0; i < elementDefs.length; i++) {
@@ -94,6 +96,36 @@
 
 
             return xmlDoc.documentElement.outerHTML;
+		}
+
+		/* Remove the definition of texts and move them
+		   instead of the <use> elements. This is needed
+		   to avoid multiple svg instances referencing 
+		   the same def
+		*/
+		function moveTextNodesFromDefs(xmlDoc) {
+      		const textDefs = xmlDoc.querySelectorAll("defs " + "text");
+      		Array.from(textDefs).forEach((tdef)=>{
+      			//Get <use> elements
+      			const uses = xmlDoc.querySelectorAll(`[*|href="#${tdef.id}"]`)
+      			Array.from(uses).forEach((use)=>{
+      				const clonedTextNode = tdef.cloneNode(true);
+      				clonedTextNode.setAttribute('id', guid());
+      				clonedTextNode.classList.add(tdef.id)
+      				use.parentNode.insertBefore(clonedTextNode, use )
+      				//Copy current attributes from <use> e.g filter
+      				Object.keys(iriElementsAndProperties).forEach((prop)=>{
+      					if(use.getAttribute(prop) != null ) {
+      						clonedTextNode.setAttribute(prop, use.getAttribute(prop))
+      					}
+      				})
+
+      				use.parentNode.removeChild(use);
+      			})
+      			//remove def text element
+      			tdef.parentNode.removeChild(tdef);
+      		})
+
 		}
 
 		function guid() {
