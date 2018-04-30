@@ -1,14 +1,16 @@
 {
-  "name": "react-knob-skins",
+  "name": "react-rotary-knob-skins-pack",
   "version": "1.0.0",
-  "description": "Set of skins for react-rotary-knob",
+  "description": "Set of 18 skins for react-rotary-knob",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/hugozap/react-rotary-knob-skins.git"
+    "url": "https://github.com/hugozap/react-rotary-knob-skins-pack"
   },
   "author": "@hugozap",
-  "homepage": "https://bitbucket.org/hugozap/react-rotary-knob-skins#readme"
+  "homepage": "https://github.com/hugozap/react-rotary-knob-skins-pack",
+  "dependencies": {
+    "react-rotary-knob": "^1.0.13"
+  }
 }
