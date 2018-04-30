@@ -1,4 +1,7 @@
 
+![skins](./preview590x300.jpg)
+
+
 [Skins catalog](http://react-rotary-knob-skins-preview.surge.sh/)
 
 [Basic CodeSandbox demo](https://codesandbox.io/s/6w9vqn0x3w)
