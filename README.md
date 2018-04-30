@@ -17,17 +17,24 @@ or
 
 # Usage
 
-Skins are named from s1 to s18. Here we import all of them
-and use the first skin:
+Skins are named from s1 to s18. 
 
 ```jsx
-import * as skins from 'react-rotary-knob-skins-pack'
+//App.js
+import React from "react";
+import { render } from "react-dom";
+import { Knob } from "react-rotary-knob";
+import * as skins from 'react-rotary-knob-skins-pack';
 
 ...
 
-<Knob skin={skins.s1} .../>
+const App = () => (
+  <div>
+    <Knob skin={skins.s15} />
+  </div>
+);
+
+render(<App />, document.getElementById("root"));
 ```
-
-[Review the skins here](http://react-rotary-knob-skins-preview.surge.sh/). Choose one that fits well with your knob size.
-
+[Open in CodeSandbox.io](https://codesandbox.io/s/6w9vqn0x3w)
 
