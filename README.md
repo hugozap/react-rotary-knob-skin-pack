@@ -1,5 +1,6 @@
 
-[Skins live demo](http://react-rotary-knob-skins-preview.surge.sh/)
+[Skins catalog](http://react-rotary-knob-skins-preview.surge.sh/)
+
 [Basic CodeSandbox demo](https://codesandbox.io/s/6w9vqn0x3w)
 
 This project contains a set of 18 skins for the react-rotary-knob component.
