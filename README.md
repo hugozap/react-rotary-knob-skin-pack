@@ -16,7 +16,7 @@ Yoy should have [https://github.com/hugozap/react-rotary-knob](https://github.co
 
 or
 
-`npm install react-rotary-knob-skins-pack --save`
+`npm install react-rotary-knob-skin-pack --save`
 
 # Usage
 
