@@ -12,7 +12,7 @@ Yoy should have [https://github.com/hugozap/react-rotary-knob](https://github.co
 
 # Install
 
-`yarn add react-rotary-knob-skins-pack`
+`yarn add react-rotary-knob-skin-pack`
 
 or
 
@@ -27,7 +27,7 @@ Skins are named from s1 to s18.
 import React from "react";
 import { render } from "react-dom";
 import { Knob } from "react-rotary-knob";
-import * as skins from 'react-rotary-knob-skins-pack';
+import * as skins from 'react-rotary-knob-skin-pack';
 
 ...
 
