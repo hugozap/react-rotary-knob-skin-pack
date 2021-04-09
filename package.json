@@ -2,6 +2,7 @@
   "name": "react-rotary-knob-skin-pack",
   "version": "1.0.2",
   "description": "Set of 18 skins for react-rotary-knob",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {},
   "repository": {
